@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a { 
+    color: inherit;
+} 
+
+.header {
+    padding: 38px 0 38px 56px;
+    background: #335891;
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    position: relative;
+    margin-right: 94px;
+    padding: 0 1rem 0.7rem 1rem;
+}
+
+.link a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.link::after {
+    display: block;
+    content: '';
+    background: white;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: width 150ms ease;
+    margin-top: -3px;
+}
+
+.link:hover::after, .link:active::after {
+    width: 80%;
+}
+
+.main {
+    height: 812px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 290px;
+
+    background: #335891;
+}
+
+.greeting-msg {
+    margin-top: 233px;
+    color: white;
+    font-weight: normal;
+}
+
+.content {
+    padding: 50px 100px;
+    padding-bottom: 120px;
+    background: #F4F4F4;
+}
+
+.project-container:not(:last-child) {
+    margin-bottom: 50px;
+} 
+
+.project-container > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    color: #262626;
+    font-size: 42px;
+}
+
+.section-title:not(:first-child) {
+    margin-top: 42px;
+}
+
+.project-name {
+    font-size: 32px;
+    color: #262626;
+}
+
+.project-desc {
+    font-size: 32px;
+    color: #262626;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.project-img {
+    position: relative;
+    object-fit: cover;
+}
+
+.project-img-box {
+    position: relative;
+}
+
+.project-img-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(33, 33, 33, 0.8);
+    background-image: url('./images/eye.png');
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 130ms ease-out;
+}
+
+.project-img-box:hover::after, .project-img-box:active::after {
+    opacity: 1;
+} 
+
+.contacts-content {
+    font-size: 24px;
+    color: #262626;
+}
+
+.recommendations-content {
+    font-size: 24px;
+    color: #262626;
+}
