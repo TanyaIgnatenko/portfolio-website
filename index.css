@@ -55,6 +55,12 @@ a {
     width: 80%;
 }
 
+@media (max-width: 1112px) {
+    .home-link {
+        display: none;
+    }
+}
+
 .main {
     height: 812px;
     display: flex;
