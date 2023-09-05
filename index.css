@@ -71,9 +71,12 @@ a {
 }
 
 .greeting-msg {
+    height: 120px;
     margin-top: 233px;
     color: white;
     font-weight: normal;
+
+    cursor: default;
 }
 
 .content {
@@ -152,4 +155,25 @@ a {
 .recommendations-content {
     font-size: 24px;
     color: #262626;
+}
+
+.wave-hand {
+    display: inline-block;
+}
+
+.greeting-msg:hover > .wave-hand {
+    animation-name: wave-hand;  
+    animation-duration: 2.6s;         
+    transform-origin: 70% 70%;       
+}
+
+@keyframes wave-hand {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(20.0deg) }  
+   20% { transform: rotate(-10.0deg) }
+   30% { transform: rotate(20.0deg) }
+   40% { transform: rotate(-6.0deg) }
+   50% { transform: rotate(12.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
 }
