@@ -112,6 +112,10 @@ a {
 .project-desc {
     font-size: 32px;
     color: #262626;
+    
+}
+
+.project-desc > a {
     text-decoration: underline;
     cursor: pointer;
 }
