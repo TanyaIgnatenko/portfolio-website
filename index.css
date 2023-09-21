@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Inter, sans-serif;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -59,6 +64,10 @@ a {
     .home-link {
         display: none;
     }
+}
+
+#home, #projects, #recommendations, #contacts {
+    scroll-behavior: smooth;
 }
 
 .main {
