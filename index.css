@@ -160,12 +160,7 @@ a {
     opacity: 1;
 } 
 
-.contacts-content {
-    font-size: 24px;
-    color: #262626;
-}
-
-.recommendations-content {
+.section-content {
     font-size: 24px;
     color: #262626;
 }
