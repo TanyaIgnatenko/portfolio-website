@@ -89,7 +89,7 @@ a {
 }
 
 .content {
-    padding: 50px 100px;
+    padding: 60px 100px;
     padding-bottom: 120px;
     background: #F4F4F4;
 }
@@ -104,7 +104,7 @@ a {
 }
 
 .section-title {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #262626;
     font-size: 42px;
 }
@@ -116,15 +116,27 @@ a {
 .project-name {
     font-size: 32px;
     color: #262626;
+    margin-bottom: 12px;
 }
 
-.project-desc {
-    font-size: 32px;
+.project-desc-box {
+    margin-right: 50px;
+}
+
+.project-technologies {
+    margin: 10px 0;
+}
+
+.project-desc, .project-technologies, .project-desc > ul, .project-desc-box > a {
+    font-size: 26px;
     color: #262626;
-    
 }
 
-.project-desc > a {
+.project-desc > ul {
+    margin: 10px 0;
+}
+
+.project-desc-box > a {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -136,6 +148,7 @@ a {
 
 .project-img-box {
     position: relative;
+    height: 393px;
 }
 
 .project-img-box::after {
